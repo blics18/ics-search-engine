@@ -1,1 +1,8 @@
-
+{
+	"schemes": ["http", "https"],
+	"subdomains": ["cdb.ics.uci.edu", "ics.uci.edu.", "mlphysics.ics.uci.edu", "seraja.ics.uci.edu", "genomics.ics.uci.edu", "hombao.ics.uci.edu", "ganglia.ics.uci.edu", "ganglia.ics.uci.edu.", "ganglia.ics.uci.edu..", "calendar.ics.uci.edu"],
+	"paths": ["os/gif", "contact/student-affairs", "/~dock", "http", "@", "//", "arrow-webapp", ".php/", "/~eppstein/pix", "/~develop", "/~hombao", "/~mlearn"],
+        "invalid_chars": [";", "..", " ", ","],
+	"query": ["o=", "c=", "http", "@", "/", "smiles=", "smilesfield=", "action=", "image="],
+	"filetypes": "(db|mat|c|lif|h|cpp|py|h5|out|pl|java|pde|css|js|bmp|gif|jpe?g|ico|png|tiff?|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v|mkv|ogg|ogv|pdf|ps|eps|tex|ppt|pptx|doc|docx|xls|xlsx|names|data|dat|exe|bz2|tar|msi|bin|7z|psd|dmg|iso|epub|dll|cnf|tgz|sha1|thmx|mso|arff|rtf|jar|csv|rm|smil|wmv|swf|wma|zip|rar|gz)"
+}

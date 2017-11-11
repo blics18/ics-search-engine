@@ -1,0 +1,33 @@
+body            { font-family: sans-serif; background-color:white; }
+ul              { list-style-type: none; }
+h1              { font-family: 'Cinzel Decorative', cursive;
+                  text-align:center; }
+
+footer          { text-align: center;
+                  bottom: 20px;
+                  position: fixed;
+                  width: 100%; }
+.pagination     { text-align: center; }
+.search-info    { text-align: center; }
+.flash          { background: #cee5F5; padding: 0.5em;
+                  border: 1px solid #aacbe2; }
+.error          { background: #f0d6d6; padding: 0.5em; }
+
+.flex-container { display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-left: 240px;
+                  margin-above: 20px;
+                  margin-below: 20px; }
+.flex-item      { margin: 10px; }
+
+.pagination-page-info { padding: .6em; padding-left: 0;
+                        width: 40em; margin: .5em;
+                        margin-left: 0; font-size: 12px; }
+
+.pagination-page-info b { color: black; background: #6aa6ed;
+                          padding-left: 2px; padding: .1em .25em;
+                          font-size: 150%; }
+
+#content        {  }
+#search-box     { text-align: center; }
