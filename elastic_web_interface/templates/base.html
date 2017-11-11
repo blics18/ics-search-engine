@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="../static/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <title>
+        Zot {% block title %}{% endblock %}
+    </title>
+    {% endblock %}
+</head>
+
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+    {% block footer %}
+        &copy; Copyright 2017 by <a href="http://ics.uci.edu/">Zot Inc</a>.
+    {% endblock %}
+    </footer>
+</body>
+</html>

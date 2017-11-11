@@ -1,1 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+{% from "_myformhelpers.html" import render_field %}
+{% from "_pagination.html" import render_pagination %}
 
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div id="search-box">
+        <a href="{{ url_for('index')  }}">
+        <img src="../static/images/banner.png" alt="zot banner" width="240px" height="90px">
+        </a>
+        <h1>Zot Search!</h1>
+        <div>
+            <form method=post>
+              {{ render_field(form.query, placeholder='Search') }}
+              <input type=submit value=Search>
+            </form>
+        </div>
+    </div>
+
+<div class="search-info">Found <b>{{ page.total_count }}</b> search results, displaying {{ page.info() }}</div>
+    <div class="flex-container">
+        {% for link in links.keys() %}
+        <div class="flex-item">
+          <a href="{{ link }}">{{ link }}</a>
+          <div>{{ links[link] }}</div>
+        </div>
+        {% endfor %}
+    </div>
+
+{{ render_pagination(page) }}
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}
